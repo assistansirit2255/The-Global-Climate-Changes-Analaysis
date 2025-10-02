@@ -1,7 +1,3 @@
-Of course. Here is the project description with some emojis added to the section headers to make it more visually appealing.
-
----
-
 # 🌍 Global Climate Change: An Exploratory Data Analysis for Policy Insights
 
 ## 1. Introduction
