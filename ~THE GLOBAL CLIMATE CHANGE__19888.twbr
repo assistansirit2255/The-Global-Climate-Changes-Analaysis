@@ -1,0 +1,1005 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_data' inline='true' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_data' name='textscan.01mbqt60dph6wo1edgpks0wgr40f'>
+            <connection class='textscan' directory='C:/Users/91965/OneDrive/Documents/dataset' filename='cleaned_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01mbqt60dph6wo1edgpks0wgr40f' name='cleaned_data.csv' table='[cleaned_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='real' name='avg_temp_c' ordinal='2' />
+            <column datatype='real' name='co2_emissions_tons_per_capita' ordinal='3' />
+            <column datatype='real' name='sea_level_rise_mm' ordinal='4' />
+            <column datatype='integer' name='rainfall_mm' ordinal='5' />
+            <column datatype='integer' name='population' ordinal='6' />
+            <column datatype='real' name='renewable_energy_pct' ordinal='7' />
+            <column datatype='integer' name='extreme_weather_events' ordinal='8' />
+            <column datatype='real' name='forest_area_pct' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_temp_c</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_temp_c]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>avg_temp_c</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_emissions_tons_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_emissions_tons_per_capita]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>co2_emissions_tons_per_capita</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sea_level_rise_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sea_level_rise_mm]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>sea_level_rise_mm</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rainfall_mm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rainfall_mm]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>rainfall_mm</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>renewable_energy_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[renewable_energy_pct]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>renewable_energy_pct</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extreme_weather_events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extreme_weather_events]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>extreme_weather_events</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>forest_area_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[forest_area_pct]</local-name>
+            <parent-name>[cleaned_data.csv]</parent-name>
+            <remote-alias>forest_area_pct</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]' role='measure' type='quantitative' />
+      <column caption='Avg Temp C' datatype='real' name='[avg_temp_c]' role='measure' type='quantitative' />
+      <column caption='Co2 Emissions Tons Per Capita' datatype='real' name='[co2_emissions_tons_per_capita]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Extreme Weather Events' datatype='integer' name='[extreme_weather_events]' role='measure' type='quantitative' />
+      <column caption='Forest Area Pct' datatype='real' name='[forest_area_pct]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Rainfall Mm' datatype='integer' name='[rainfall_mm]' role='measure' type='quantitative' />
+      <column caption='Renewable Energy Pct' datatype='real' name='[renewable_energy_pct]' role='measure' type='quantitative' />
+      <column caption='Sea Level Rise Mm' datatype='real' name='[sea_level_rise_mm]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/91965/AppData/Local/Temp/TableauTemp/#TableauTemp_1je1mtm0ywej7o12cicyu14a3y72.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/01/2025 04:01:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_temp_c</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_temp_c]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_temp_c</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2_emissions_tons_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2_emissions_tons_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2_emissions_tons_per_capita</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sea_level_rise_mm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sea_level_rise_mm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sea_level_rise_mm</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rainfall_mm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rainfall_mm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rainfall_mm</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>799</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>renewable_energy_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[renewable_energy_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>renewable_energy_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extreme_weather_events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extreme_weather_events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extreme_weather_events</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>forest_area_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[forest_area_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>forest_area_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>473</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_data.csv' id='cleaned_data.csv_EF5AEEAA25294A258250A588F4759CFA'>
+            <properties context=''>
+              <relation connection='textscan.01mbqt60dph6wo1edgpks0wgr40f' name='cleaned_data.csv' table='[cleaned_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='real' name='avg_temp_c' ordinal='2' />
+                  <column datatype='real' name='co2_emissions_tons_per_capita' ordinal='3' />
+                  <column datatype='real' name='sea_level_rise_mm' ordinal='4' />
+                  <column datatype='integer' name='rainfall_mm' ordinal='5' />
+                  <column datatype='integer' name='population' ordinal='6' />
+                  <column datatype='real' name='renewable_energy_pct' ordinal='7' />
+                  <column datatype='integer' name='extreme_weather_events' ordinal='8' />
+                  <column datatype='real' name='forest_area_pct' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Co2 vs temp'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column caption='Avg Temp C' datatype='real' name='[avg_temp_c]' role='measure' type='quantitative' />
+            <column caption='Co2 Emissions Tons Per Capita' datatype='real' name='[co2_emissions_tons_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+            <column caption='Renewable Energy Pct' datatype='real' name='[renewable_energy_pct]' role='measure' type='quantitative' />
+            <column-instance column='[avg_temp_c]' derivation='Sum' name='[sum:avg_temp_c:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_emissions_tons_per_capita]' derivation='Sum' name='[sum:co2_emissions_tons_per_capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[renewable_energy_pct]' derivation='Sum' name='[sum:renewable_energy_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:renewable_energy_pct:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:renewable_energy_pct:qk]' />
+              <size column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:population:qk]' />
+              <lod column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:year:qk]' />
+              <lod column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.0434806346893311' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk]</rows>
+        <cols>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:co2_emissions_tons_per_capita:qk]</cols>
+      </table>
+      <simple-id uuid='{935C5B08-0B70-4A6D-B74C-ED96C8063143}' />
+    </worksheet>
+    <worksheet name='Geographically'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column caption='Avg Temp C' datatype='real' name='[avg_temp_c]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_temp_c]' derivation='Sum' name='[sum:avg_temp_c:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[Longitude (generated)]' field-type='quantitative' max='28389760.456560481' min='-16694856.832435386' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[Latitude (generated)]' field-type='quantitative' max='11383491.975988036' min='-1381718.3586362074' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk]' />
+              <lod column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]' />
+              <geometry column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[Latitude (generated)]</rows>
+        <cols>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{CC78D5CB-B987-4838-B326-F59E1165A657}' />
+    </worksheet>
+    <worksheet name='Global temperature trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column caption='Avg Temp C' datatype='real' name='[avg_temp_c]' role='measure' type='quantitative' />
+            <column caption='Co2 Emissions Tons Per Capita' datatype='real' name='[co2_emissions_tons_per_capita]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_temp_c]' derivation='Sum' name='[sum:avg_temp_c:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2_emissions_tons_per_capita]' derivation='Sum' name='[sum:co2_emissions_tons_per_capita:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:co2_emissions_tons_per_capita:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk] + [federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:co2_emissions_tons_per_capita:qk])</rows>
+        <cols>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{B0AC34CE-3D09-4833-91BE-F6180C9CE850}' />
+    </worksheet>
+    <worksheet name='Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column-instance column='[avg_temp_c]' derivation='Avg' name='[avg:avg_temp_c:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Temp C' datatype='real' name='[avg_temp_c]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[avg:avg_temp_c:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[avg:avg_temp_c:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:year:qk]</rows>
+        <cols>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{295BE19F-DEE8-4452-A4A9-DB0A71C3F5F9}' />
+    </worksheet>
+    <worksheet name='Share of global Co2 emissions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column caption='Co2 Emissions Tons Per Capita' datatype='real' name='[co2_emissions_tons_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2_emissions_tons_per_capita]' derivation='Sum' name='[sum:co2_emissions_tons_per_capita:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]' />
+              <wedge-size column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:co2_emissions_tons_per_capita:qk]' />
+              <text column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:co2_emissions_tons_per_capita:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{194B34DA-5AD4-4D4D-8BB7-E3C7862EB77B}' />
+    </worksheet>
+    <worksheet name='Top10 countries with highest Co2 emissions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_data' name='federated.0mwdihl0scysd71cp3o1r0bu1kq6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mwdihl0scysd71cp3o1r0bu1kq6'>
+            <column-instance column='[co2_emissions_tons_per_capita]' derivation='Avg' name='[avg:co2_emissions_tons_per_capita:qk]' pivot='key' type='quantitative' />
+            <column caption='Co2 Emissions Tons Per Capita' datatype='real' name='[co2_emissions_tons_per_capita]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([co2_emissions_tons_per_capita])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[avg:co2_emissions_tons_per_capita:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[avg:co2_emissions_tons_per_capita:qk]</rows>
+        <cols>[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{6C742D31-6B73-42D2-9817-FFD884C2D84B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='The Global Climate Changes'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='20' param='horz' type-v2='layout-flow' w='99000' x='500' y='999'>
+            <zone h='98002' id='17' param='horz' type-v2='layout-flow' w='99000' x='500' y='999'>
+              <zone h='98002' id='8' param='horz' type-v2='layout-flow' w='99000' x='500' y='999'>
+                <zone h='98002' id='6' type-v2='layout-basic' w='99000' x='500' y='999'>
+                  <zone h='32662' id='3' name='Global temperature trends' w='49499' x='500' y='999'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='32673' id='5' name='Co2 vs temp' w='49499' x='500' y='66328'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='32663' id='11' name='Top10 countries with highest Co2 emissions' w='49501' x='49999' y='999'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='32673' id='12' name='Heatmap' w='49501' x='49999' y='66328'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='32667' id='14' name='Share of global Co2 emissions' w='49499' x='500' y='33661'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='32666' id='18' name='Geographically' w='49501' x='49999' y='33662'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='253' h='32665' id='3' is-fixed='true' name='Global temperature trends' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='32666' id='11' is-fixed='true' name='Top10 countries with highest Co2 emissions' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32666' id='14' is-fixed='true' name='Share of global Co2 emissions' w='49200' x='800' y='33665'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32665' id='18' is-fixed='true' name='Geographically' w='49200' x='50000' y='33666'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='32669' id='5' is-fixed='true' name='Co2 vs temp' w='49200' x='800' y='66331'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='32669' id='12' is-fixed='true' name='Heatmap' w='49200' x='50000' y='66331'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{758BA66C-1CDD-427B-A8DA-652DF0A4C36A}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Global temperature trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5FAAC51F-C453-44CC-BDBA-6B880E4EF670}' />
+    </window>
+    <window class='worksheet' name='Co2 vs temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:renewable_energy_pct:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:population:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{671EC1F6-709C-4CFB-96D1-ECE22C1A1C00}' />
+    </window>
+    <window class='worksheet' name='Top10 countries with highest Co2 emissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B01A577-EE11-4BBC-8056-49E9695999BB}' />
+    </window>
+    <window class='worksheet' name='Share of global Co2 emissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B117D5F7-D0E1-4CAA-A5CA-BAB37DEA58E9}' />
+    </window>
+    <window class='worksheet' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[avg:avg_temp_c:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{98644072-AA8D-4341-BB52-FBEEBC25EFAB}' />
+    </window>
+    <window class='worksheet' name='Geographically'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mwdihl0scysd71cp3o1r0bu1kq6].[sum:avg_temp_c:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{9F0B9EF3-66CB-4A22-B89F-2320EF6E2857}' />
+    </window>
+    <window class='dashboard' maximized='true' name='The Global Climate Changes'>
+      <viewpoints>
+        <viewpoint name='Co2 vs temp'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Geographically'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Global temperature trends'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Share of global Co2 emissions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top10 countries with highest Co2 emissions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7E0B2AB4-1E13-4625-9D4D-2574519CEC77}' />
+    </window>
+  </windows>
+</workbook>
